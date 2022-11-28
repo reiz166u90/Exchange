@@ -1,5 +1,154 @@
-@media screen and (max-width:480px){
-img{
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  10%{
+    background-position: 0 50%;
+  }
+}
+.content{
+  margin-top: 100px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  animation: color 8s ease-in-out infinite;
+  width: 100vw;
+  background-size: 300% 300%;
+}
+.numPan{
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 100%;
+  color: black;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.num{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.numPan .disp{
+  width: 600px;
+  padding: 20px;
+  outline: none;
+  border-radius: none;
+  background: none;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+}
+.numPan .disp{
+  border-bottom: 1px solid #666;
 
 }
+.disp input{
+  display: inline;
+}
+.disp img{
+  width: 30px;
+  height: 30px;
+}
+.numPan .disp input{
+  width: 200px;
+  height: 1cm ;
+  padding: 20px;
+  outline: none;
+  border: 2px solid #666;
+  background: none;
+  text-align: center;
+  color: black;
+  font-size: 1em;
+  border-radius: 10px;
+}
+.numPan .nums > .r div{
+  font-size: 3em;
+  font-weight: bold;
+  height: 50px;
+  width: 50px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num button{
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  font-size: 2em;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  margin-right: 20px;
+}
+.exchange select{
+  margin: 20px;
+  width: 30%;
+  height: 1cm;
+  font-size: 0.7cm;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.qwe{
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.qwe button{
+  width: 160px;
+}
+#number_select{
+  margin-top: 20px;
+  font-size: 0.8cm;
+  width: 150px;
+  height: 1cm;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+h1{
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1.5cm;
+  color: #c7158c;
+
+}
+
+.captcha{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#captchaValue{
+  width: 100px;
+  height: 44px;
+  padding: 10px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px 0 0 10px;
+  color: #000;
+  font-weight: 700;
+  border: 2px solid #666;
+}
+.captcha input{
+  border-radius: 0 10px 10px 0 !important;
 }

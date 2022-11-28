@@ -1,15 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="flex">
     <div class="content">
-        <img src="img/1.jpg" alt="img">
+      <div class="num">
+        
+        <div class="numPan">
+          <h1>Currency Exchange</h1>
+          <div class="disp">
+              <input type="number" id="myInput" >
+              <img src="img/exchange.png" alt="ex">
+              <input type="text" class="totalprice" id="total_price" placeholder="MNT">
+                      <select name="exchange" id="number_select">
+                        <option value="USD"> USD</option>
+                        <option value="EURO">EURO</option>
+                        <option value="POUND">POUND</option>
+                        <option value="WON">WON</option>
+                        <option value="YEN">YEN</option>
+                        <option value="YAN">YAN</option>
+                      </select>
+              <div class="captcha">
+                <div id="captchaValue">ssss</div>
+                <input type="text" id="inputCaptcha" placeholder="Captcha">
+              </div>
+            </div>
+            <div class="nums">
+              <div class="num r r1">
+                <div><span>1</span></div>
+                <div><span>2</span></div>
+                <div><span>3</span></div>
+              </div>
+              <div class="num r r2">
+                <div><span>4</span></div>
+                <div><span>5</span></div>
+                <div><span>6</span></div>
+              </div>
+              <div class="num r r3">
+                <div><span>7</span></div>
+                <div><span>8</span></div>
+                <div><span>9</span></div>
+              </div>
+              
+              <div class="num r r4">
+                  <div><span>0</span></div>
+              </div>
+              <div class="qwe">
+                <button onclick="document.getElementById('myInput').value = ''">DEL</button>
+                <button id="submitBtn" onclick="myFunction()">Convert</button>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
+  <p id="demo"></p>
+  <script src="myscripts.js"></script>
 </body>
 </html>
