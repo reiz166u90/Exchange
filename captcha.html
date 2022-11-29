@@ -10,7 +10,7 @@
         <div class="numPan">
           <h1>Currency Exchange</h1>
           <div class="disp">
-              <input type="number" id="myInput" >
+              <input type="number" id="myInput" onclick="dorjoogoy('2dehtoo')">
               <img src="img/exchange.png" alt="ex">
               <input type="text" class="totalprice" id="total_price" placeholder="MNT">
                       <select name="exchange" id="number_select">
@@ -23,28 +23,27 @@
                       </select>
               <div class="captcha">
                 <div id="captchaValue">ssss</div>
-                <input type="text" id="inputCaptcha" placeholder="Captcha">
+                <input type="text" id="inputCaptcha" placeholder="Captcha" onclick="dorjoogoy('1dehtoo')">
               </div>
             </div>
             <div class="nums">
               <div class="num r r1">
-                <div><span>1</span></div>
-                <div><span>2</span></div>
-                <div><span>3</span></div>
+                <div onclick="toonemeh(1)"><span><input type="text" value="1">1</span></div>
+                <div onclick="toonemeh(2)"><span><input type="text" value="2">2</span></div>
+                <div onclick="toonemeh(3)"><span><input type="text" value="3">3</span></div>
               </div>
               <div class="num r r2">
-                <div><span>4</span></div>
-                <div><span>5</span></div>
-                <div><span>6</span></div>
+                <div onclick="toonemeh(4)"><span><input type="text" value="4">4</span></div>
+                <div onclick="toonemeh(5)"><span><input type="text" value="5">5</span></div>
+                <div onclick="toonemeh(6)"><span><input type="text" value="6">6</span></div>
               </div>
               <div class="num r r3">
-                <div><span>7</span></div>
-                <div><span>8</span></div>
-                <div><span>9</span></div>
+                <div onclick="toonemeh(7)"><span><input type="text" value="7">7</span></div>
+                <div onclick="toonemeh(8)"><span><input type="text" value="8">8</span></div>
+                <div onclick="toonemeh(9)"><span><input type="text" value="9">9</span></div>
               </div>
-              
               <div class="num r r4">
-                  <div><span>0</span></div>
+                  <div onclick="toonemeh(0)"><span><input type="text" value="0">0</span></div>
               </div>
               <div class="qwe">
                 <button onclick="document.getElementById('myInput').value = ''">DEL</button>
@@ -56,5 +55,6 @@
     </div>
   <p id="demo"></p>
   <script src="myscripts.js"></script>
+ 
 </body>
 </html>
